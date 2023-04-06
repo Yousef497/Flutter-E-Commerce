@@ -15,13 +15,13 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
       child: MaterialButton(
           padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 0),
           textColor: AppColors.white,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
           onPressed: () {
             controller.next();
           },
           color: AppColors.purple,
-          child: const Text(
-              "Continue"
+          child: Text(
+              "Continue".tr
           ),
       ),
     );

@@ -31,7 +31,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                       clipper: WaveClipper(),
                       child: Container(
                         color: AppColors.purpleShade,
-                        height: 370,
+                        height: 315,
                       ),
                     ),
                   ),
@@ -40,7 +40,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                     clipper: WaveClipper(),
                     child: Container(
                       color: AppColors.purple,
-                      height: 350,
+                      height: 295,
                     ),
                   ),
 
@@ -51,7 +51,7 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                         const SizedBox(height: 20,),
 
                         Text(
-                          onBoardingList[i].title!,
+                          onBoardingList[i].title!.tr,
                           style: Theme.of(context).textTheme.headline1,
                         ),
 
@@ -59,13 +59,13 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
 
                         Image.asset(
                           onBoardingList[i].image!,
-                          height: MediaQuery.of(context).size.height*0.66,
+                          height: MediaQuery.of(context).size.height*0.64,
                         ),
 
                         const SizedBox(height: 20,),
 
                         Text(
-                          onBoardingList[i].body!,
+                          onBoardingList[i].body!.tr,
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.bodyText1,
                         ),

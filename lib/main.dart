@@ -1,13 +1,18 @@
+import 'package:e_commerce/core/localization/translation.dart';
+import 'package:e_commerce/view/screen/language.dart';
 import 'package:e_commerce/view/screen/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import 'core/constants/color.dart';
+import 'core/localization/changeLocal.dart';
+import 'core/services/services.dart';
 import 'routes.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await initialServices();
   SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.immersiveSticky,
     overlays: [SystemUiOverlay.top]
@@ -21,9 +26,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    LocaleController controller = Get.put(LocaleController());
     return GetMaterialApp(
+      translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
+
       title: 'Flutter Demo',
+
+      locale: controller.language,
       theme: ThemeData(
         textTheme: const TextTheme(
 
@@ -40,7 +50,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue,
       ),
-      home: OnBoarding(),
+      home: Language(),
       routes: routes,
     );
   }
