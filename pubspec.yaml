@@ -110,3 +110,7 @@ flutter:
         - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo-Bold.ttf
           weight: 700
+
+    - family: Better
+      fonts:
+        - asset: assets/fonts/Better-Together.ttf

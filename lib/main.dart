@@ -1,6 +1,7 @@
 import 'package:e_commerce/core/localization/translation.dart';
+import 'package:e_commerce/view/screen/auth/authentication.dart';
+import 'package:e_commerce/view/screen/auth/login.dart';
 import 'package:e_commerce/view/screen/language.dart';
-import 'package:e_commerce/view/screen/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -12,11 +13,13 @@ import 'routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await initialServices();
   SystemChrome.setEnabledSystemUIMode(
     SystemUiMode.immersiveSticky,
     overlays: [SystemUiOverlay.top]
   );
+
   runApp(const MyApp());
 }
 
@@ -50,7 +53,9 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue,
       ),
+
       home: Language(),
+      //home: Authentication(),
       routes: routes,
     );
   }

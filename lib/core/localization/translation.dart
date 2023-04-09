@@ -6,6 +6,18 @@ class MyTranslation extends Translations{
   Map<String, Map<String, String>> get keys => {
 
     "ar": {
+      "Enter your E-mail": "أدخل البريد الإلكتروني",
+      "Enter your Password": "أدخل كلمة السر",
+      "Forget Password": "نسيت كلمة السر",
+      "Enter your Username": "أدخل الاسم",
+      'Username': "الاسم",
+      "Enter your Phone": "أدخل رقم الهاتف",
+      'Phone': "رقم الهاتف",
+      "login": "تسجيل الدخول",
+      "sign in": "تسجيل الدخول",
+      "sign up": "إنشاء حساب",
+      "welcome": "مرحبا بك",
+      "register": "إنشاء حساب",
       "Choose a Language" : "اختر اللغة",
       "next": "التالي",
       "settings": "الإعدادات",
@@ -26,6 +38,18 @@ class MyTranslation extends Translations{
     },
 
     "en": {
+      "Forget Password": "Forget Password",
+      "Enter your E-mail": "Enter your E-mail",
+      "Enter your Password": "Enter your Password",
+      "Enter your Username": "Enter your Username",
+      'Username': 'Username',
+      "Enter your Phone": "Enter your Phone",
+      'Phone': 'Phone',
+      "sign in": "Sign In",
+      "sign up": "Sign Up",
+      "welcome": "Welcome",
+      "login": "Login",
+      "register": "Register",
       "Choose a Language" : "Choose a Language",
       "next": "Next",
       "settings": "Settings",
