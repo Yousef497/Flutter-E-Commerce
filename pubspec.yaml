@@ -87,6 +87,9 @@ dependencies:
   responsive_builder: ^0.4.2
   image_pickers: ^2.0.0+2
 
+  # OTP
+  flutter_otp_text_field: ^1.1.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -109,6 +112,12 @@ flutter:
       fonts:
         - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Regular.ttf
+        - asset: assets/fonts/PlayfairDisplay-Bold.ttf
           weight: 700
 
     - family: Better

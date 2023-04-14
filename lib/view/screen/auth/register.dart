@@ -71,7 +71,9 @@ class Register extends StatelessWidget {
 
             CustomButtonAuth(
               text: "sign up",
-              onPressed: () {},
+              onPressed: () {
+                controller.signUp();
+              },
             ),
 
             const SizedBox(height: 15,)

@@ -52,7 +52,11 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
 
                         Text(
                           onBoardingList[i].title!.tr,
-                          style: Theme.of(context).textTheme.headline1,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                              color: AppColors.white
+                          ),
                         ),
 
                         const SizedBox(height: 20,),
@@ -62,12 +66,15 @@ class CustomSliderOnBoarding extends GetView<OnBoardingControllerImp> {
                           height: MediaQuery.of(context).size.height*0.64,
                         ),
 
-                        const SizedBox(height: 20,),
+                        const SizedBox(height: 15,),
 
                         Text(
                           onBoardingList[i].body!.tr,
                           textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.grey
+                          ),
                         ),
 
                       ],

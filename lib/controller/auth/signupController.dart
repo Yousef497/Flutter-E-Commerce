@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/constants/route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +15,7 @@ class SignUpControllerImp extends SignUpController{
 
   @override
   signUp() {
-    // TODO: implement signUp
-    throw UnimplementedError();
+    Get.offNamed(AppRoute.checkEmail);
   }
 
   @override

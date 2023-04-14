@@ -6,6 +6,7 @@ class MyTranslation extends Translations{
   Map<String, Map<String, String>> get keys => {
 
     "ar": {
+      'Check Email': "تفقد البريد الإكتروني",
       "Enter your E-mail": "أدخل البريد الإلكتروني",
       "Enter your Password": "أدخل كلمة السر",
       "Forget Password": "نسيت كلمة السر",
@@ -38,6 +39,24 @@ class MyTranslation extends Translations{
     },
 
     "en": {
+      'Verification Code': 'Verification Code',
+      "Check": "Check",
+      'Check Verification Code': 'Check Verification Code',
+      'Check Code': 'Check Code',
+      'Please enter the digit code sent to the provided Email': 'Please enter the digit code sent to the provided Email',
+      "Reset Password": "Reset Password",
+      'New Password': 'New Password',
+      'Please Enter new Password': 'Please Enter new Password',
+      "Save": "Save",
+      'Success SignUp': 'Success SignUp',
+      "Success": "Success",
+      "Thanks for signing up. Your account has been created": "Thanks for signing up. Your account has been created",
+      "Go to Login": "Go to Login",
+      "Your Password has been changed successfully": "Your Password has been changed successfully",
+
+      //----------------------------------------------------------------------------------------
+
+      'Check Email': 'Check Email',
       "Forget Password": "Forget Password",
       "Enter your E-mail": "Enter your E-mail",
       "Enter your Password": "Enter your Password",

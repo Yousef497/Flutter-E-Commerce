@@ -1,5 +1,7 @@
 import 'package:e_commerce/core/localization/translation.dart';
+import 'package:e_commerce/test.dart';
 import 'package:e_commerce/view/screen/auth/authentication.dart';
+import 'package:e_commerce/view/screen/auth/forgetPassword/forgetPassword.dart';
 import 'package:e_commerce/view/screen/auth/login.dart';
 import 'package:e_commerce/view/screen/language.dart';
 import 'package:flutter/material.dart';
@@ -37,25 +39,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
 
       locale: controller.language,
-      theme: ThemeData(
-        textTheme: const TextTheme(
-
-          headline1: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 22,
-              color: AppColors.white
-          ),
-
-          bodyText1: TextStyle(
-              fontSize: 18,
-              color: Colors.grey
-          ),
-        ),
-        primarySwatch: Colors.blue,
-      ),
+      theme: controller.appTheme,
 
       home: Language(),
-      //home: Authentication(),
+      //home: ForgetPassword(),
+      //home: Test(),
       routes: routes,
     );
   }
